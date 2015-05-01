@@ -1,0 +1,21 @@
+[submodule "centos6-ansible-nfs/roles/dlip.nfs"]
+	path = centos6-ansible-nfs/roles/dlip.nfs
+	url = https://github.com/dlip/ansible-role-nfs
+[submodule "centos6-ansible-nginx/roles/dlip.nginx"]
+	path = centos6-ansible-nginx/roles/dlip.nginx
+	url = https://github.com/dlip/ansible-role-nginx
+[submodule "centos6-ansible-php/roles/dlip.php"]
+	path = centos6-ansible-php/roles/dlip.php
+	url = https://github.com/dlip/ansible-role-php
+[submodule "centos6-ansible-php/roles/dlip.remi"]
+	path = centos6-ansible-php/roles/dlip.remi
+	url = https://github.com/dlip/ansible-role-remi
+[submodule "centos6-ansible-php-apache/roles/dlip.apache"]
+	path = centos6-ansible-php-apache/roles/dlip.apache
+	url = https://github.com/dlip/ansible-role-apache
+[submodule "centos6-ansible-php-apache-laravel/roles/dlip.laravel"]
+	path = centos6-ansible-php-apache-laravel/roles/dlip.laravel
+	url = https://github.com/dlip/ansible-role-laravel
+[submodule "centos6-ansible-postgresql/roles/dlip.postgresql"]
+	path = centos6-ansible-postgresql/roles/dlip.postgresql
+	url = https://github.com/dlip/ansible-role-postgresql
