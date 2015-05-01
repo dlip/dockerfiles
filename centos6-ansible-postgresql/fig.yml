@@ -1,0 +1,7 @@
+postgresql:
+  image: dlip/centos6-ansible-postgresql
+  volumes:
+    - ./host_vars:/var/playbooks/host_vars
+    - .:/share
+  ports:
+    - "5499:5432"

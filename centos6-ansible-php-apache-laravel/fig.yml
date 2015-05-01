@@ -1,0 +1,7 @@
+laravel:
+  image: dlip/centos6-ansible-php-apache-laravel
+  volumes:
+    - ./host_vars:/var/playbooks/host_vars
+    - ./roles/dlip.laravel:/var/playbooks/roles/dlip.laravel
+  ports:
+    - "8099:80"

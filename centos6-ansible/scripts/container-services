@@ -1,0 +1,10 @@
+#!/bin/bash
+
+trap "echo Shutdown signal received" HUP INT QUIT KILL TERM
+
+(while true; do echo "service up" | nc -l 9811; done)&
+
+eval "tail -f $LOG_FILE&"
+
+child=$!
+wait $child

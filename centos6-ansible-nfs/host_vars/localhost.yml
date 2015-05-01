@@ -1,0 +1,9 @@
+---
+nfs_exports:
+  - path: /share
+    permissions: '*(rw,sync,fsid=0,crossmnt,no_subtree_check)'
+nfs_options:
+  MOUNTD_NFS_V3: "yes"
+  RPCNFSDARGS: "-N 4"
+  NFSD_MODULE: "noload"
+  MOUNTD_PORT: "892"

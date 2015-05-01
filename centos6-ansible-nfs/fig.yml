@@ -1,0 +1,9 @@
+nfs:
+  image: dlip/centos6-ansible-nfs
+  volumes:
+    - ./host_vars:/var/playbooks/host_vars
+    - ./roles/dlip.nfs:/var/playbooks/roles/dlip.nfs
+    - ./share:/share
+  ports:
+    - "2050:2049"
+  privileged: true

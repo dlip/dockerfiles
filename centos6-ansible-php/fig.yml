@@ -1,0 +1,4 @@
+php:
+  image: dlip/centos6-ansible-php
+  volumes:
+    - ./host_vars:/var/playbooks/host_vars

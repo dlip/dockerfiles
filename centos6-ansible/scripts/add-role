@@ -1,0 +1,11 @@
+#!/bin/bash
+set -e
+
+ROLE_NAME=$1
+
+if [ -x "$ROLE_NAME" ]; then
+  echo "No role name provided"
+  exit 1
+fi
+
+echo "    - { role: $ROLE_NAME }" >> /var/playbooks/docker.yml
