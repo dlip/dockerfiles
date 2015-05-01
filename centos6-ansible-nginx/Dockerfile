@@ -7,6 +7,6 @@ RUN add-role dlip.nginx
 
 RUN container-install
 
-RUN add-service "tail -f /var/log/nginx/*.log"
+ENV LOG_FILE /var/log/nginx/*.log
 
 EXPOSE 80
