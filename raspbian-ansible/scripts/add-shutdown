@@ -1,0 +1,11 @@
+#!/bin/bash
+set -e
+
+SHUTDOWN_COMMAND=$1
+
+if [ -x "$SHUTDOWN_COMMAND" ]; then
+  echo "No shutdown command provided"
+  exit 1
+fi
+
+echo "$SHUTDOWN_COMMAND" >> /usr/local/bin/container-services

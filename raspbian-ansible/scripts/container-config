@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ -n "$BASE64_CONFIG" ]; then
+  echo "Using host_vars from BASE64_CONFIG"
+  echo "$BASE64_CONFIG" | base64 --decode > /var/playbooks/host_vars/localhost.yml
+fi
+
+if [ ! -f /var/playbooks/host_vars/localhost.yml ]; then
+  echo "Warning: No host_vars file"
+fi
+
+cd /var/playbooks && ansible-playbook docker.yml --skip-tags='install'
