@@ -1,9 +1,10 @@
 samba:
   image: dlip/raspbian-ansible-samba
   volumes:
+    - /mnt/data:/srv/samba/shares/public
+    # Dev Testing:
     - ./host_vars:/var/playbooks/host_vars
     - ./roles/dlip.samba:/var/playbooks/roles/dlip.samba
-    - /mnt/data:/srv/samba/shares/public
   ports:
     - "445:445"
     - "139:139"
