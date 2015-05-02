@@ -1,0 +1,11 @@
+samba:
+  image: dlip/raspbian-ansible-samba
+  volumes:
+    - ./host_vars:/var/playbooks/host_vars
+    - ./roles/dlip.samba:/var/playbooks/roles/dlip.samba
+    - /mnt/data:/srv/samba/shares/public
+  ports:
+    - "445:445"
+    - "139:139"
+    - "137:137/udp"
+    - "138:138/udp"
