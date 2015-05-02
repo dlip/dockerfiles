@@ -19,3 +19,6 @@
 [submodule "centos6-ansible-postgresql/roles/dlip.postgresql"]
 	path = centos6-ansible-postgresql/roles/dlip.postgresql
 	url = https://github.com/dlip/ansible-role-postgresql
+[submodule "raspbian-ansible-samba/roles/dlip.samba"]
+	path = raspbian-ansible-samba/roles/dlip.samba
+	url = https://github.com/dlip/ansible-role-samba.git
