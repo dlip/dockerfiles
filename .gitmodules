@@ -22,3 +22,6 @@
 [submodule "raspbian-ansible-samba/roles/dlip.samba"]
 	path = raspbian-ansible-samba/roles/dlip.samba
 	url = https://github.com/dlip/ansible-role-samba.git
+[submodule "raspbian-ansible-plex/roles/dlip.plex"]
+	path = raspbian-ansible-plex/roles/dlip.plex
+	url = https://github.com/dlip/ansible-role-plex.git
