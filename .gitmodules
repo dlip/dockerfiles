@@ -25,3 +25,6 @@
 [submodule "raspbian-ansible-plex/roles/dlip.plex"]
 	path = raspbian-ansible-plex/roles/dlip.plex
 	url = https://github.com/dlip/ansible-role-plex.git
+[submodule "centos6-ansible-logstashforwarder/roles/dlip.logstash-forwarder"]
+	path = centos6-ansible-logstashforwarder/roles/dlip.logstash-forwarder
+	url = https://github.com/dlip/ansible-role-logstash-forwarder.git

@@ -1,0 +1,5 @@
+logstashforwarder:
+  image: dlip/centos6-ansible-logstashforwarder
+  volumes:
+    - ./host_vars:/var/playbooks/host_vars
+    - .:/share
